@@ -2,7 +2,7 @@ import streamlit as st
 from google import genai
 import datetime
 
-client = genai.Client(api_key='AIzaSyAwO6bQr9J9GYqKCAOrz5l4vmKyYxL8zh0')
+client = genai.Client(api_key='GOOGLE GEMINI API KEY')
 
 st.title("AI Trip-Planner ✈️")
 
@@ -43,4 +43,5 @@ if submit_btn:
 
 
             response = client.models.generate_content (model="gemini-2.5-flash", contents=prompt) 
+
             st.write(response.text)
