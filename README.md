@@ -1,96 +1,127 @@
-# Ai_Trip_Planner
+🧠 AI Trip Planner
 
-# 🧠 AI Trip Planner
-
-An intelligent travel planning web app built with **Python**, **Streamlit**, and **Google Gemini API**.  
+An intelligent travel planning web application built with Python, Streamlit, and Google Gemini API.
 It helps users create personalized travel itineraries based on their preferences — destinations, budget, duration, and interests.
 
 ---
 
-## 🚀 Features
+🚀 Features
 
-- 🗺️ **AI-Powered Recommendations** — Uses Google Gemini to suggest destinations, activities, and hotels.
-- 📅 **Smart Itinerary Generation** — Creates a full travel plan with day-wise scheduling.
-- 💰 **Budget Optimization** — Suggests affordable or luxury options based on your budget range.
-- 🌤️ **Weather Insights** — Provides climate information for your travel dates.
-- 🧳 **Custom Filters** — Choose interests like adventure, relaxation, culture, food, etc.
-- ⚡ **Instant Results** — Built with Streamlit for a fast and interactive experience.
-
----
-
-## 🧩 Tech Stack
-
-| Component | Technology |
-|------------|-------------|
-| **Frontend/UI** | Streamlit |
-| **Backend** | Python |
-| **AI Model** | Google Gemini API |
-| **Environment Management** | Virtualenv / Conda |
-| **Deployment** | Streamlit Cloud / Netlify / Render |
+· 🗺️ AI-Powered Recommendations — Uses Google Gemini to suggest destinations, activities, and hotels
+· 📅 Smart Itinerary Generation — Creates a full travel plan with day-wise scheduling
+· 💰 Budget Optimization — Suggests affordable or luxury options based on your budget range
+· 🌤️ Weather Insights — Provides climate information for your travel dates
+· 🧳 Custom Filters — Choose interests like adventure, relaxation, culture, food, etc.
+· ⚡ Instant Results — Built with Streamlit for a fast and interactive experience
 
 ---
 
-## 🏗️ Project Structure
+🧩 Tech Stack
 
+Component Technology
+Frontend/UI Streamlit
+Backend Python
+AI Model Google Gemini API
+Environment Management Virtualenv / Conda
+Deployment Streamlit Cloud
+
+---
+
+🏗️ Project Structure
+
+```
 ai-trip-planner/
 │
-├── app.py # Main Streamlit app
-├── requirements.txt # Dependencies
-├── .env # Environment variables (API keys)
+├── app.py                 # Main Streamlit application
+├── requirements.txt       # Python dependencies
+├── .env                  # Environment variables (API keys)
 ├── utils/
-│ ├── gemini_api.py # Functions to call Gemini API
-│ ├── itinerary_builder.py# Logic to generate trip plans
-│ └── helpers.py # Additional utilities
+│   ├── gemini_api.py     # Functions to call Gemini API
+│   ├── itinerary_builder.py # Logic to generate trip plans
+│   └── helpers.py        # Additional utilities
 ├── assets/
-│ └── images/ # Optional images and icons
-└── README.md # Project documentation
-
+│   └── images/           # Optional images and icons
+└── README.md             # Project documentation
+```
 
 ---
 
-## 🔑 Setup Instructions
+🔑 Setup Instructions
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the Repository
+
 ```bash
-git clone https://github.com/<your-username>/ai-trip-planner.git
-cd ai-trip-planner
+git clone https://github.com/ruturaj45/Ai_Trip_Planner.git
+cd Ai_Trip_Planner
+```
 
-2️⃣ Create a virtual environment
+2️⃣ Create a Virtual Environment
+
+```bash
+# Windows
 python -m venv my_env
-my_env\Scripts\activate      # (Windows)
-source my_env/bin/activate   # (Mac/Linux)
+my_env\Scripts\activate
 
-3️⃣ Install dependencies
+# Mac/Linux
+python -m venv my_env
+source my_env/bin/activate
+```
+
+3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4️⃣ Add your API keys
+4️⃣ Configure API Keys
 
-Create a .env file in the project root and add:
+Create a .env file in the project root and add your Gemini API key:
 
-GEMINI_API_KEY=your_gemini_api_key
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
 
-5️⃣ Run the app
+5️⃣ Run the Application
+
+```bash
 streamlit run app.py
+```
 
-💡 Example Usage
+---
 
-1-Enter your destination, budget, and number of days.
+💡 How to Use
 
-2-Select your travel interests (adventure, nature, history, etc.).
+1. Enter your travel details - destination, budget, and number of days
+2. Select your interests - choose from adventure, nature, history, food, etc.
+3. Generate your plan - click "Generate Trip Plan" to create your itinerary
+4. View recommendations - explore suggested places, hotels, and activities
 
-3-Click “Generate Trip Plan” — The AI will generate a detailed itinerary!
-
-4-View recommendations for places, hotels, and activities.
+---
 
 🧠 Powered By
 
-Streamlit
+· Streamlit - Web application framework
+· Google Gemini API - AI-powered recommendations
+· Python 3.10+ - Backend logic and processing
 
-Google Gemini API
+---
 
-Python 3.10+
+📸 Demo
 
-📸 Demo Screenshot
-
-Add a screenshot of your running app here
 https://github.com/ruturaj45/Ai_Trip_Planner/blob/main/Screenshot%202025-11-08%20190534.png?raw=true
+
+---
+
+📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+---
+
+Start planning your perfect trip with AI! ✈️🌍
